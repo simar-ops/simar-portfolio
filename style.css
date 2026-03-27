@@ -1,0 +1,49 @@
+:root {
+    --bg-dark: #0a0f1a;
+    --card-bg: #161e2d;
+    --accent-blue: #3b82f6;
+    --text-white: #ffffff;
+    --text-gray: #94a3b8;
+    --font-main: 'Lexend', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: var(--font-main);
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Nav & Hero tweaks */
+nav { display: flex; justify-content: space-between; padding: 2rem 8%; }
+.logo span { color: var(--accent-blue); }
+nav ul { display: flex; list-style: none; gap: 2rem; }
+nav ul a { text-decoration: none; color: var(--text-gray); }
+
+#hero { padding: 8rem 8% 5rem; text-align: left; max-width: 900px; }
+.pre-title { color: var(--accent-blue); font-size: 1.1rem; margin-bottom: 0.5rem; }
+h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 1.5rem; }
+h1 span { color: var(--accent-blue); }
+.description { font-size: 1.2rem; color: var(--text-gray); margin-bottom: 2.5rem; }
+
+.btn { padding: 0.8rem 1.8rem; background: var(--accent-blue); color: white; text-decoration: none; border-radius: 5px; margin-right: 1rem; }
+.btn.secondary { background: transparent; border: 1px solid var(--accent-blue); color: var(--accent-blue); }
+
+/* Skills Section */
+#skills { padding: 5rem 8%; text-align: center; }
+.skills-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem; }
+.skill-tag { background: var(--card-bg); padding: 0.6rem 1.5rem; border: 1px solid #2d3748; border-radius: 30px; color: var(--accent-blue); font-weight: 500; }
+
+/* Projects Section */
+#projects { padding: 5rem 8%; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
+.project-card { background: var(--card-bg); padding: 2.5rem; border-radius: 15px; border: 1px solid #2d3748; position: relative; transition: 0.3s; }
+.project-card:hover { border-color: var(--accent-blue); transform: translateY(-5px); }
+
+.status-badge { position: absolute; top: 20px; right: 20px; background: #22c55e; color: white; padding: 0.2rem 0.7rem; border-radius: 4px; font-size: 0.7rem; text-transform: uppercase; font-weight: 600; }
+.tech-stack { margin: 1.5rem 0; display: flex; gap: 0.5rem; }
+.tech-stack span { font-size: 0.8rem; color: var(--accent-blue); background: rgba(59, 130, 246, 0.1); padding: 0.3rem 0.6rem; border-radius: 4px; }
+.project-link { text-decoration: none; color: white; font-weight: 600; display: inline-block; margin-top: 1rem; }
+
+footer { padding: 4rem; text-align: center; color: var(--text-gray); border-top: 1px solid #2d3748; }
